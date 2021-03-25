@@ -1841,27 +1841,27 @@ border-radius: 50px;
 
 /** brand **/
 .brand {
-     padding-top: 60px;
+     padding-top: 10px;
      border-top: #db0000 solid 6px;}
 
 .brand-bg {
      background: #ebebeb;
-     padding: 90px 0px;
+     padding: 60px 0px;
      font-family: poppins;
 }
 
 .margin {
-     margin-bottom: 30px;
+     margin-bottom: 20px;
 }
 
 
 .brand-bg .brand_box {
      background: #fff;
      text-align: center;
-     padding: 80px 0px 30px 0px ;
+     padding: 40px 4px 20px 0px ;
 }
 .brand-bg .brand_box > img {
-    height: 200px;
+    height: 150px;
     width: auto;
 }
 .brand-bg .brand_box h3 {
@@ -1869,7 +1869,7 @@ border-radius: 50px;
      font-size: 27px;
      font-weight: bold;
      color: #131313;
-     padding: 17px 0px 0px 0px;
+     padding: 2px 0px 0px 0px;
 }
 .red {
      color: #ff0000;
@@ -1894,12 +1894,12 @@ margin-top: 0px;
 display: block;
 background: #000;
 color: #fff !important;
-padding: 12px 0px;
+padding: 4px 0px;
 width: 100%;
-font-size: 17px;
+font-size: 14px;
 text-align: center;
 border-radius: 32px;
-margin-top: 40px
+margin-top: 10px
 }
 
 .read-more:hover {
@@ -2162,15 +2162,45 @@ ul.location_icon span {
 
 .special-page .footer {margin-top: 90px;}
 
-ul.myredlist {
-          list-style-position: inside;
+ul.myredlist { 
+          list-style: square;
+          font-weight: 600;
+          font-size: 18px;
+}
+ul.myredlist li{
+     position: relative;
 }
 
 ul.myredlist li::before {
+     position: relative;
+     top: 1px;
      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
      color: red; /* Change the color */
      font-weight: bold; /* If you want it to be bold */
      display: inline-block; /* Needed to add space between the bullet and the text */
      width: 1em; /* Also needed for space (tweak if needed) */
      margin-left: 1em; /* Also needed for space (tweak if needed) */
+   }
+.nav_color {
+     
+     background-color: red;
+}
+
+.nav_custom {
+     font-family: poppins;
+     font-size: 18px;
+     font-weight: bold; 
+}
+
+ul.nav_custom li {
+     display: inline-block;
+     padding: 2px 15px;  
+}
+
+.logo_center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     height: min-content;
    }
