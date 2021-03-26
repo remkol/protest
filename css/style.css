@@ -39,6 +39,7 @@ body {
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
+     /* padding-top: 70px; */
 }
 
 a {
@@ -51,7 +52,7 @@ a {
      -o-transition: all .3s ease-in-out;
      transition: all .3s ease-in-out;
 }
-
+     
 h1,
 h2,
 h3,
@@ -1906,6 +1907,26 @@ margin-top: 10px
      background: #ff0000;
 }
 
+.read-info { 
+     font-family: poppins;
+     max-width: auto;
+     margin: 0 auto;
+     margin-top: 0px;
+     display: block;
+     background: #000;
+     color: #fff !important;
+     padding: 4px 20px;
+     width: 100%;
+     font-size: 14px;
+     text-align: left;
+     border-radius: 32px;
+     margin-top: 10px
+     }
+     
+     .read-info:hover {
+          background: #ff0000;
+     }
+
 /** end brand **/
 
 /** contact **/
@@ -1954,14 +1975,17 @@ margin-top: 10px
 
 .send {
      font-family: poppins;
-    max-width: 212px;
+    /* max-width: 500px; */
     margin: 0 auto;
     display: block;
     background: #000;
     color: #fff;
-    padding: 12px 0px;
+    padding: 4px 4px 4px 4px;
     width: 100%;
-    font-size: 17px;
+    font-size: 14px;
+    margin-block-end: 4px;
+    text-align: left;
+    
 }
 
 .send:hover {
@@ -2167,20 +2191,7 @@ ul.myredlist {
           font-weight: 600;
           font-size: 18px;
 }
-ul.myredlist li{
-     position: relative;
-}
 
-ul.myredlist li::before {
-     position: relative;
-     top: 1px;
-     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-     color: red; /* Change the color */
-     font-weight: bold; /* If you want it to be bold */
-     display: inline-block; /* Needed to add space between the bullet and the text */
-     width: 1em; /* Also needed for space (tweak if needed) */
-     margin-left: 1em; /* Also needed for space (tweak if needed) */
-   }
 .nav_color {
      
      background-color: red;
@@ -2204,3 +2215,8 @@ ul.nav_custom li {
      width: 50%;
      height: min-content;
    }
+
+img.displayed {
+     display: block;
+     margin-left: auto;
+     margin-right: auto }

@@ -13,6 +13,8 @@
     <meta name="keywords" content="protest">
     <meta name="description" content="Protest mieszkańców Sadkowa przeciwko przemysłowej fermie krów">
     <meta name="author" content="">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- style css -->
@@ -21,8 +23,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- fevicon -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <!-- owl stylesheets -->
@@ -38,7 +39,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout ">
+<body class="main-layout">
     <!-- loader  -->
     <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -46,8 +47,7 @@
     <!-- end loader -->
     <!-- header -->
 
-    <header>
-        <!-- header inner -->
+    <!-- <header>
         <div>
             <div class="container">
                 <div class="logo_center">
@@ -55,8 +55,7 @@
                 </div>
             </div>
         </div>
-        <!-- end header inner -->
-    </header>
+    </header> -->
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav_color">
         <div class="container ">
@@ -212,13 +211,21 @@
                                 Sadkowa
                                 jak
                                 i okolicznych miejscowości: </p>
-                            <img src="images/info_grafika.jpg" alt="img" />
+
                         </div>
 
                     </div>
 
                 </div>
+
             </div>
+
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <img class="displayed" src="images/info_grafika.jpg" alt="img" />
         </div>
     </div>
     <!-- end about -->
@@ -300,18 +307,15 @@
 
     <!-- brand -->
     <div id="brand" class="brand">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="titlepage">
-                        <h2>Nasze działania</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="brand-bg">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="titlepage">
+                            <h2>Nasze działania</h2>
+                        </div>
+                    </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
                         <a href="https://www.petycjeonline.com/stop_hodowli_przemysowej_w_sadkowie_powiat_wrocawski"
                             target="_blank">
@@ -397,7 +401,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
+                    <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
                         <a href="https://www.se.pl/" target="_blank">
 
                             <div class="brand_box">
@@ -406,7 +410,7 @@
                                 <span>Materiał w przygotowaniu...</span>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -421,43 +425,53 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="titlepage">
-                        <h2>Informacje</h2>
+                        <h2>Informacje pomocnicze</h2>
                     </div>
                     <form class="main_form">
                         <ul class="myredlist">
-                            <li><a href="https://polonia.nl/2019/10/07/holandia-dzieci-choruja-na-astme-randstad/"
+                            <li><a class="read-info"
+                                    href="https://polonia.nl/2019/10/07/holandia-dzieci-choruja-na-astme-randstad/"
                                     target="_blank">W Holandii 100 000 dzieci choruje na astmę. Głównym winowajcą jest
                                     dwutlenek azotu (NO2) występujący m.in. w pobliżu przemysłowych hodowli zwierząt</a>
                             </li>
-                            <li><a href="https://www.rp.pl/Firma/303049952-Ferma-drobiu-nie-moze-byc-za-blisko-domow---wyrok-WSA.html"
+                            <li><a class="read-info"
+                                    href="https://www.rp.pl/Firma/303049952-Ferma-drobiu-nie-moze-byc-za-blisko-domow---wyrok-WSA.html"
                                     target="_blank">Wyrok Wojewódzkiego Sądu Administracyjnego</a></li>
 
-                            <li><a href="https://holstein.pl/holandia-mniej-gospodarstw-wiecej-mleka/?fbclid=IwAR23s_K8U60G1lDFHnX0R4MbiFKkmhM2QzjSPGECRmXC9Cua4eLlX5p0MEE"
+                            <li><a class="read-info"
+                                    href="https://holstein.pl/holandia-mniej-gospodarstw-wiecej-mleka/?fbclid=IwAR23s_K8U60G1lDFHnX0R4MbiFKkmhM2QzjSPGECRmXC9Cua4eLlX5p0MEE"
                                     target="_blank">Spadek liczby gospodarstw hodujących bydło i produkujących mleko w
                                     Holandii</a></li>
-                            <li><a href="https://stopfermom.pl/materialy" target="_blank">Materiały edukacyjne</a></li>
-                            <li><a href="https://www.youtube.com/watch?v=pGA0oDbYxxM" target="_blank">Ekologiczna
+                            <li><a class="read-info" href="https://stopfermom.pl/materialy" target="_blank">Materiały
+                                    edukacyjne</a></li>
+                            <li><a class="read-info" href="https://www.youtube.com/watch?v=pGA0oDbYxxM"
+                                    target="_blank">Ekologiczna
                                     produkcja
                                     mleka</a></li>
-                            <li><a href="https://www.agropolska.pl/produkcja-zwierzeca/bydlo/projekt-fermy-na-1-500-sztuk-bydla-storpedowany-przez-mieszkancow,845.html?fbclid=IwAR2O6YgED-rmEUvoDhKlCcNP7QDu27LU_QJedyvsoJ1xVX45Yj2Gpla5-mo"
+                            <li><a class="read-info"
+                                    href="https://www.agropolska.pl/produkcja-zwierzeca/bydlo/projekt-fermy-na-1-500-sztuk-bydla-storpedowany-przez-mieszkancow,845.html?fbclid=IwAR2O6YgED-rmEUvoDhKlCcNP7QDu27LU_QJedyvsoJ1xVX45Yj2Gpla5-mo"
                                     target="_blank">Projekt fermy na 1 500 sztuk bydła storpedowany przez
                                     mieszkańców</a>
                             </li>
-                            <li><a href="https://www.nik.gov.pl/aktualnosci/nik-o-fermach-zwierzat.html?fbclid=IwAR1mqrTxV3ykBFVNoKOczEd32-0fUX7KKEZHs_hJAOLHZEsZRRHC4DkMs9A"
+                            <li><a class="read-info"
+                                    href="https://www.nik.gov.pl/aktualnosci/nik-o-fermach-zwierzat.html?fbclid=IwAR1mqrTxV3ykBFVNoKOczEd32-0fUX7KKEZHs_hJAOLHZEsZRRHC4DkMs9A"
                                     target="_blank">NIK o fermach zwierząt</a></li>
-                            <li><a href="https://m.youtube.com/watch?v=ymWjXnnrGXM" target="_blank">Kulisy przemysłu
+                            <li><a class="read-info" href="https://m.youtube.com/watch?v=ymWjXnnrGXM"
+                                    target="_blank">Kulisy przemysłu
                                     mlecznego</a></li>
-                            <li><a href="http://fundacjawspomaganiawsi.pl/chow-przemyslowy-zwierzat-dobry-czy-zly/?fbclid=IwAR3YTeI0_Ahn8kn-OpAzq2NL0VBsrA2qCuSnCTvCvZrMR5fDCAtwwhITumI"
-                                    target="_blank">Artykuł konfrontuje zwolennikó i przeciwników ferm przemysłowych.
+                            <li><a class="read-info"
+                                    href="http://fundacjawspomaganiawsi.pl/chow-przemyslowy-zwierzat-dobry-czy-zly/?fbclid=IwAR3YTeI0_Ahn8kn-OpAzq2NL0VBsrA2qCuSnCTvCvZrMR5fDCAtwwhITumI"
+                                    target="_blank">Artykuł konfrontuje zwolenników i przeciwników ferm przemysłowych.
                                     Materiał poparty faktami i badaniami</a></li>
-                            <li><a href="https://www.dzpk.pl/pl/parki-krajobrazowe/88-park-krajobrazowy-dolina-bystrzycy/118-dydaktyczna-sciezka-rowerowa-w-parku-krajobrazowym-dolina-bystrzycy.html"
+                            <li><a class="read-info"
+                                    href="https://www.dzpk.pl/pl/parki-krajobrazowe/88-park-krajobrazowy-dolina-bystrzycy/118-dydaktyczna-sciezka-rowerowa-w-parku-krajobrazowym-dolina-bystrzycy.html"
                                     target="_blank">Artukuł opisujący walory rekreacyjne położonego w niedużej
                                     odległości od
                                     planowej inwestycji Parku Krajobrazowego Dolina Bystrzycy</a></li>
-                            <li><a href="https://stronazdrowia.pl/zmiana-przepisow-ue-o-zywnosci-roslinnej-niezgodna-z-trendami-w-polsce-i-na-swiecie-zamienniki-miesa-i-mleka-wybieramy-coraz/ar/c14-15265152"
+                            <li><a class="read-info"
+                                    href="https://stronazdrowia.pl/zmiana-przepisow-ue-o-zywnosci-roslinnej-niezgodna-z-trendami-w-polsce-i-na-swiecie-zamienniki-miesa-i-mleka-wybieramy-coraz/ar/c14-15265152"
                                     target="_blank">Z roku na rok spada konsumpcja mięsa i produktód odzwierzęcych. W
-                                    Polsce
-                                    coraz dynamiczniej rozwija się rynek produktów wegańskich</a></li>
+                                    Polsce coraz dynamiczniej rozwija się rynek produktów wegańskich</a></li>
                         </ul>
                         <!-- <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
@@ -472,10 +486,9 @@
                             <div class="col-md-12">
                                 <textarea class="textarea" placeholder="Message"></textarea>
                             </div>
-                            <div class=" col-md-12">
-                                <button class="send">Send</button>
-                            </div>
+                            
                         </div> -->
+
                     </form>
                 </div>
             </div>
@@ -526,12 +539,14 @@
     <!-- end footer -->
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
+
     <script src="js/plugin.js"></script>
     <!-- sidebar -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
     <script src="js/custom.js"></script>
     <!-- javascript -->
     <script src="js/owl.carousel.js"></script>
