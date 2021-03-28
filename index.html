@@ -48,9 +48,9 @@
 
 <body class="main-layout">
     <!-- loader  -->
-    <div class="loader_bg">
+    <!-- <div class="loader_bg">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-    </div>
+    </div> -->
     <!-- end loader -->
     <!-- header -->
 
@@ -72,7 +72,7 @@
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav nav_custom">
-                    <li class="nav-item active"> <a class="nav-link" href="index.html">Start</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="#">Start</a> </li>
                     <li class="nav-item"><a class="nav-link" href="#about">Dlaczego walczymy</a> </li>
                     <li class="nav-item"><a class="nav-link" href="#brand">Nasze działania</a></li>
                     <li class="nav-item"><a class="nav-link" href="#information">Informacje</a></li>
@@ -149,13 +149,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <img class="third-slide" src="images/banner5.jpg" alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption relative">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                 <i class='fa fa-angle-left'></i>
@@ -178,57 +178,65 @@
                 <div class="col-xl-7 col-lg-7 col-md-7 co-sm-l2">
                     <div class="about_box">
                         <h3>Kim jesteśmy</h3>
-                        <span>i dlaczego walczymy?</span>
-                        <p>Sadków to wieś położona w gminie Kąty Wrocławskie, w województwie dolnośląskiem, kilka
-                            kilometrów od Parku Krajobrazowego Doliny Bystrzycy oraz w pobliżu obszarów Natura2000.
-                            Od
-                            kilku lat wieś notuje napływ nowych mieszkańców, którzy zamieszkują nowo powstałe
-                            osiedla. W
-                            centrum miejscowości znajduje się zmodernizowany obiekt Zespołu Szkolno-Przedszkolnego,
-                            do
-                            którego uczęszczają dzieci z Sadkowa oraz z wielu pobliskich miejscowości.
-                            <br>Bez uprzednich konsultacji, kiedy postępowanie w sprawie wydania zgody na inwestycję już
-                            trwało, dowiedzieliśmy się o planach powstania przemysłowej fermy
-                            krów...
-                            <a onclick="switchInfo()" class="read-more">Więcej...</a></p>
-                        <div id="info" style="display:none">
-                            <p>...Na wniosek firmy Hedro Farms Sp. z o.o. zostało wszczęte
-                                postępowanie w sprawie wydania
-                                decyzji
-                                o środowiskowych uwarunkowaniach dla przedsięwzięcia pn. „Modernizacja gospodarstwa
-                                na
-                                hodowlę bydła mlecznego wraz z infrastrukturą towarzyszącą na działce o nr ewid.
-                                142/21
-                                obręb Sadków, gmina Kąty Wrocławskie, powiat wrocławski, województwo dolnośląskie”.
-                                Ferma
-                                miałaby powstać na terenach obecnie należących do Hedro Farms Sp. z o.o., które
-                                znajdują
-                                się
-                                w pobliżu ścisłego centrum wsi, a tym samym licznych zabudowań mieszkalnych oraz
-                                szkoły
-                                i
-                                przedszkola.
-                                W związku z tym rozpoczęliśmy protest, bowiem obawiamy się powstania takiej
-                                inwestycji i
-                                prowadzimy zakrojone na szeroką skalę działania walcząc o jej zablokowanie.
-                                <br>Przyłącz się do protestu podpisując <a style="font-weight: bold; color:red;"
-                                    href="https://www.petycjeonline.com/stop_hodowli_przemysowej_w_sadkowie_powiat_wrocawski"
-                                    target="_blank">petycję.</a>
-                                <br>Przemysłowa ferma krów mlecznych niesie za sobą szereg zagrożen zarówno dla
-                                Sadkowa
-                                jak
-                                i okolicznych miejscowości: </p>
-
+                        <h4>i dlaczego walczymy?</h4>
+                        <div>
+                            <p>Sadków to wieś położona w gminie Kąty Wrocławskie, w
+                                województwie dolnośląskim, kilka
+                                kilometrów od Parku Krajobrazowego Doliny Bystrzycy oraz w pobliżu obszarów Natura
+                                2000.
+                                Od
+                                kilku lat wieś notuje napływ nowych mieszkańców, którzy zamieszkują nowo powstałe
+                                osiedla. W
+                                centrum miejscowości znajduje się zmodernizowany obiekt Zespołu
+                                Szkolno-Przedszkolnego,
+                                do
+                                którego uczęszczają dzieci z Sadkowa oraz z wielu pobliskich miejscowości.
+                                <br>Bez uprzednich konsultacji, kiedy postępowanie w sprawie wydania zgody na
+                                inwestycję
+                                już
+                                trwało, dowiedzieliśmy się o planach powstania przemysłowej fermy
+                                krów. </p><span id="dots"></span><span id="more">
+                                <p> Na wniosek firmy Hedro Farms Sp. z o.o.
+                                    zostało
+                                    wszczęte
+                                    postępowanie w sprawie wydania
+                                    decyzji
+                                    o środowiskowych uwarunkowaniach dla przedsięwzięcia pn. „Modernizacja
+                                    gospodarstwa
+                                    na
+                                    hodowlę bydła mlecznego wraz z infrastrukturą towarzyszącą na działce o nr ewid.
+                                    142/21
+                                    obręb Sadków, gmina Kąty Wrocławskie, powiat wrocławski, województwo
+                                    dolnośląskie”.
+                                    Ferma
+                                    miałaby powstać na terenach obecnie należących do Hedro Farms Sp. z o.o., które
+                                    znajdują
+                                    się
+                                    w pobliżu ścisłego centrum wsi, a tym samym licznych zabudowań mieszkalnych oraz
+                                    szkoły
+                                    i
+                                    przedszkola.
+                                    W związku z tym rozpoczęliśmy protest, bowiem obawiamy się powstania takiej
+                                    inwestycji i
+                                    prowadzimy zakrojone na szeroką skalę działania walcząc o jej zablokowanie.
+                                    <br>Przyłącz się do protestu podpisując
+                                    <a style="font-weight: bold; color:red;"
+                                        href="https://www.petycjeonline.com/stop_hodowli_przemysowej_w_sadkowie_powiat_wrocawski"
+                                        target="_blank">petycję.</a>
+                                    <br>Przemysłowa ferma krów mlecznych niesie za sobą szereg zagrożen zarówno dla
+                                    Sadkowa jak i okolicznych miejscowości.</p>
+                            </span>
+                            <button onclick="switchInfo()" id="myBtn">Więcej...</button>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-
         </div>
+
+    </div>
+
+
+    </div>
     </div>
     <div class="container">
         <div class="row">
@@ -329,7 +337,7 @@
                             <div class="brand_box">
                                 <img src="images/petycja_online.jpg" alt="img" />
                                 <h5><strong class="red">Petycja Online</strong></h5>
-                                <span>Ponad 1500 złożonych podpisów online</span>
+                                <span>Ponad 1700 złożonych podpisów online</span>
                             </div>
                         </a>
                     </div>
@@ -344,11 +352,12 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin">
-                        <a href="https://wroclaw.tvp.pl/53014418/28032021" target="_blank">
+                        <a href="https://wroclaw.se.pl/armia-krow-budzi-przerazenie-mieszkancy-podwroclawskiej-wsi-sa-zdesperowani-wideo-aa-7nib-Zjjm-djit.html?fbclid=IwAR11pRYFPp35GbcFoBvj3MgXOX_RQICLk3HnLBDq7OtxTq2Cl3Jkz0l67YM"
+                            target="_blank">
                             <div class="brand_box">
-                                <img src="images/agrofakty.jpg" alt="img" />
-                                <h5><strong class="red">Agro Fakty</strong></h5>
-                                <span>Transmisja z Sadkowa</span>
+                                <img src="images/superexpress.jpg" alt="img" />
+                                <h5><strong class="red">Super Express</strong></h5>
+                                <span>Reportaż</span>
                             </div>
                         </a>
                     </div>
@@ -400,11 +409,12 @@
                         </a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mrgn">
-                        <a href="https://www.youtube.com/" target="_blank">
+                        <a href="https://stopfermom.pl/blog/czy-ferma-bydla-mlecznego-zniszczy-zycie-mieszkancow-sadkowa-protest-przeciwko-ogromnej-inwestycji?fbclid=IwAR0-N8IT8netvsyrOl-7xAmwWGUa8Jnb200ikvy_0cRCRgKNFHbGERtKzQ4"
+                            target="_blank">
                             <div class="brand_box">
-                                <img src="images/youtube.png" alt="img" />
-                                <h5><strong class="red">YouTube</strong></h5>
-                                <span>Materiał w przygotowaniu...</span>
+                                <img src="images/stop_fermom.png" alt="img" />
+                                <h5><strong class="red">Stop Fermom Przemysłowym</strong></h5>
+                                <span>Blog</span>
                             </div>
                         </a>
                     </div>
@@ -479,6 +489,31 @@
                                     href="https://stronazdrowia.pl/zmiana-przepisow-ue-o-zywnosci-roslinnej-niezgodna-z-trendami-w-polsce-i-na-swiecie-zamienniki-miesa-i-mleka-wybieramy-coraz/ar/c14-15265152"
                                     target="_blank">Z roku na rok spada konsumpcja mięsa i produktód odzwierzęcych. W
                                     Polsce coraz dynamiczniej rozwija się rynek produktów wegańskich</a></li>
+                            <li><a class="read-info" href="https://www.youtube.com/watch?v=JgpbeR8FGaY"
+                                    target="_blank">Jak megafermy mleczarskie zanieczyszczają wodę?</a></li>
+                            <li><a class="read-info"
+                                    href="https://oko.press/cierpienie-w-szklance-mleka-krowom-usuwaja-rogi/?fbclid=IwAR0Y3IHmhbGPFqSjd39VPbMCvvf-T3kUZbmq7l-YBIGCzjVnQRkmpoSSBGw"
+                                    target="_blank">Cierpienie w szklance mleka</a></li>
+                            <li><a class="read-info"
+                                    href="https://www.otwarteklatki.pl/blog/budowa-fermy-kolo-domu?fbclid=IwAR2BSesEU8sCiwynDVeMf8QcTlHLlJjS1rmm-TAQ8KxoY_EuhWFzowO-Qm0"
+                                    target="_blank">Jak zatrzymać budowę fermy?</a></li>
+                            <li><a class="read-info"
+                                    href="https://www.otwarteklatki.pl/blog/sukces-kruszynian-nie-powstanie-ferma-drobiu?fbclid=IwAR3nC044WtFnKQNH03MARyMmWkXXV6UlorUfFYhGwezboxs3ZFOgRC_Alxs"
+                                    target="_blank">Jak w Kruszynianach zablokowano powstanie
+                                    fermy drobiu?</a></li>
+                            <li><a class="read-info"
+                                    href="http://stopklatka.org/?fbclid=IwAR1VmkKNRjB2ptXj1eTVG1o4r3YI6hqO4vu-UjybRdjdFOeYWbQ8Qfl12sw"
+                                    target="_blank">Viva! Akcja dla zwierząt</a></li>
+                            <li><a class="read-info"
+                                    href="https://vege.com.pl/2011/09/29/chow-przemyslowy-smierdzi/?fbclid=IwAR3nC044WtFnKQNH03MARyMmWkXXV6UlorUfFYhGwezboxs3ZFOgRC_Alxs"
+                                    target="_blank">Chów przemysłowy śmierdzi!</a></li>
+                            <li><a class="read-info"
+                                    href="https://stopfermom.pl/blog/czy-mozna-zatrzymac-ekspansje-ferm-przemyslowych-webinar-koalicji-spolecznej-stop-fermom-przemyslowym?fbclid=IwAR2kyd0UO7atmSAro2t18x2LfldX-Rf00XaqDG-Xh5hv3VMwZme9B_OoEQs"
+                                    target="_blank">Czy można zatrzymać ekspansję ferm
+                                    przemysłowych? Webinar Koalicji Społecznej Stop Fermom Przemysłowym</a></li>
+                            <li><a class="read-info" href="https://www.youtube.com/watch?v=samaZVh8zDI&t=363s"
+                                    target="_blank">Jak bardzo krowy zmieniają klimat?</a></li>
+
                         </ul>
                         <!-- <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
